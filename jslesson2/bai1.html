@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Toan tu so hoc</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   </head>
+  <body>
+    <p id="sum"></p>
+    <script type="text/javascript">
+        /*
+        kiểu đơn giá trị trong js:string,number,boolean,undefined
+        object,function,array
+        */
+        //undefined;
+        // var t;
+        // //object
+        // var person = {
+        //   name:"Jackson",
+        //   age:20,
+        //   salary: 120.3
+        // }
+        // //function
+        // function sumOfAAndB(a,b)
+        // {
+        //   return a + b;
+        // }
+        // //array
+        // var arr = ['apple','banana','chily'];
+        // var something = null;
+        // // cách để kiểm tra kiểu của một biến dùng typeof
+        document.getElementById("demo").innerHTML = "type of 'true' variable:" + typeof true;
+        
+
+
+
+        //ví dụ tính tổng a và b
+          var a = 200;
+          var b = 300;
+          var tong = sumOfAB(a,b);
+          function sumOfAB(c,d)
+          {
+            var x = a + b;
+            return x;
+          }
+          document.getElementById("sum").innerHTML = tong;
+          
+
+
+          //tong day so tu start den end;
+          function sumOfArray(start,end)
+          {
+            var s = 0;
+            for(var i = start; i<=end; i++)
+            {
+            s +=i;
+            }
+            return s;
+          }
+          document.getElementById("sum").innerHTML ="Tong tu 1 den 10 = " + sumOfArray(1,10);
+    
+
+
+          
+          //cách tái sử dụng hàm function
+          function sayHello(message,name)
+          {
+            var msg = message + " " + name + "!";
+            return msg;
+          }
+          var ms = "good morning";
+          var ms2 = "goof night";
+          var per = "A";
+          var per2 = "B";
+          document.getElementById("sum").innerHTML = sayHello(ms,per);
+    
+    </script>
+    
+  </body>
+</html>

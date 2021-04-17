@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      <p id="demo"></p>
+        <script type="text/javascript">
+         /*
+        thuộc tính của object được thể hiện dưới dạng key và value
+        bên trái(trước dấu :) là key và bên phải là value
+        +) các thuộc tính được ngăn cách nhau bới dấu phẩy
+         */
+        //các phương thức hoặc các hàm dùng để mô tả các hành động
+        //khi gọi phương thức tendoituong.tenphuongthuc()
+        //để truy xuất đến 1 thuộc tính tendoituong.tenthuoctinh
+       var person = {
+           firstName : "Tran",
+           lastName : "Vy",
+            age : 20,
+            fullName: function(){
+                return this.firstName + " " + this.lastName;
+            },
+            goToSchool: function(){
+                return "BY Bus";
+            }
+       }
+       //cach thay doi cac thuoc tinh
+       person.firstName = "Nguyen";
+       person.lastName = "An"
+       document.getElementById("demo").innerHTML = person.fullName();
+       /*cach xoa 1 thuoc tinh trong object:
+        delete tenobject.tenthuoctinh;
+        */
+       /*cach them 1 method trong object
+       objectName.newMethodName = function(){...};
+       */
+      //them method laugh
+      person.laugh = function(){
+          return "hahaaa";
+      }
+        </script>
+    </body>
+</html>
